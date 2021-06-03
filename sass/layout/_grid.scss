@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.col {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &-sm {
+    max-width: 320px;
+  }
+
+  &-md {
+    max-width: 768px;
+  }
+
+  &-xl {
+    max-width: 1024px;
+  }
+}
